@@ -1,16 +1,21 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""Main module."""
+
 import prompt
 
 
 def welcome_user():
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
+    """Welcome user function."""
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
 
 
 def main():
-    print("Welcome to the Brain Games!")
+    """Master function."""
+    print('Welcome to the Brain Games!')
     welcome_user()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
